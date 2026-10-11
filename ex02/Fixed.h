@@ -50,10 +50,12 @@ public:
 	static Fixed &max(Fixed &left, Fixed &right);
 	static const Fixed &max(const Fixed &left, const Fixed &right);
 
+	/* Auxiliary */
+	static int checkedRaw(long raw);
+
 private:
 	int value;	
 	static int const shift = 8;
-
 };
 
 std::ostream &operator << (std::ostream &, const Fixed &);
