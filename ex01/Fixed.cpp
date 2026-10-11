@@ -37,7 +37,7 @@ Fixed::Fixed(const float num) : value(0.0f)
 	const float rounded = roundf(num * scale);
 	if (rounded != rounded ||
 		static_cast<double>(rounded) < static_cast<double>(std::numeric_limits<int>::min()) ||
-		static_cast<double>(rounded) >= static_cast<double>(std::numeric_limists<int>::max()) + 1.0)
+		static_cast<double>(rounded) >= static_cast<double>(std::numeric_limits<int>::max()) + 1.0)
 	{
 		throw std::overflow_error("Fixed: float overflow");
 	}
