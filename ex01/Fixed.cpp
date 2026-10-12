@@ -31,7 +31,7 @@ Fixed::Fixed(const int num) : value(0)
 	std::cout << "Int constructor called\n";
 }
 
-Fixed::Fixed(const float num) : value(0.0f)
+Fixed::Fixed(const float num) : value(0)
 {
 	const int scale = 1 << shift;
 	const float rounded = roundf(num * scale);

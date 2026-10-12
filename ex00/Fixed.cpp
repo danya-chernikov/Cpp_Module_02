@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-//int Fixed::shift = 8;
-
 Fixed::Fixed() : value(0)
 {
 	std::cout << "Default constructor called\n";
@@ -28,13 +26,13 @@ Fixed::~Fixed()
 	std::cout << "Destructor called\n";
 }
 
-int Fixed::getRawBits(void) const
+int Fixed::getRawBits() const
 {
 	std::cout << "getRawBits member function called\n";
 	return value;
 }
 
-void Fixed::setRawBits(int const raw)
+void Fixed::setRawBits(const int raw)
 {
 	std::cout << "setRawBits member function called\n";
 	value = raw;
